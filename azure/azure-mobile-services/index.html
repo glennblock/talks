@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Windows Azure <br>
+						Mobile Services</h1>
+					<h3>Ease your mobile apps to the cloud</h3>
+					<p>
+						<small>Glenn Block<a href="http://twitter.com/gblock">@gblock</a></small>
+					</p>
+				</section>
+				<section>
+					<h3>Moving to cloud</h3>
+					<br>
+					<p>
+						If you are a client side mobile developer<br>
+						Then taking your mobile apps to the cloud ain't easy!<br>
+				    </p>
+				</section>
+				<section>
+					<h3>Moving to the cloud</h3>
+					<br>
+					<p>
+						You've got a lot to worry about:<br><br>
+
+						<font color="cyan">
+						<span class="fragment">Data</span>  <span class="fragment">-  Validation/Logic</span> 
+						<span class="fragment">-  Notifications</span>  <span class="fragment">-  Tasks</span><br><br>
+						  <span class="fragment">Identity</span>  <span class="fragment">-  Scale  
+						  <span class="fragment">-  Monitoring</span>  <span class="fragment">-  Reach</span>
+						</font>
+					</p>
+				</section>
+				<section>
+					<h2>Azure Mobile Services <br>will take you there</h2>
+				</section>
+				<section>
+					<h3>Azure Mobile Services</h3>
+					<p>
+						Common application services for your <br>
+						cloud enabled mobile apps<br><br>
+
+						<font color="yellow"><span class="fragment">You choose your front end, <br>
+						we can work with all of them</span></font>
+					</p>
+				</section>
+				<section>
+				    <h3>Azure Mobile Services</h3>
+				    <p>You can:<br><br>
+				    	<li align="left" class="fragment">Start small</li>
+				    	<li align="left" class="fragment">Incrementally grow</li>
+				    	<li align="left" class="fragment">Bite off as much as you an chew</li>
+				    	<li align="left" class="fragment">Customize</li>
+				    </p>
+				</section>
+				<section>
+					<h3>Azure Mobile Services</h3><br>
+					<p>And you don't have to become a <font color="cyan">traditional</font><br>
+						server side programmer</p>
+				</section>
+				<section>
+					<h1>Sound to good <br>to be true?</h1>
+				</section>
+				<section>
+					<h1>It's not if for the right kind of app</h1>
+				</section>
+				<section>
+					<h1>How can you get started?</h1>
+					<br>
+					<h3>http://www.windowsazure.com/en-us/develop/mobile/</h2>
+				</section>
+				<section>
+					<h1>THE END</h1>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
